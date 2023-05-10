@@ -1,0 +1,13 @@
+main {
+  padding-top: 50px;
+  overflow-y: auto;
+  }
+  app-menu,
+  app-content {
+  border: solid;
+  }
+
+
+  div.row{
+  margin: 0%;
+  }
