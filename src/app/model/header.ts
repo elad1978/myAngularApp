@@ -1,5 +1,7 @@
 export class Header {
-  title: String | undefined;
-  url: String | undefined;
-  isShow: Boolean | undefined;
+  title!: String;
+  homeIcon!: String;
+  profileName!: String;
+  isMobile!: Boolean;
+  menuIcon!: String;
 }

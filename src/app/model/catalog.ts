@@ -1,2 +1,1 @@
-export class Catalog {
-}
+export class Catalog {}

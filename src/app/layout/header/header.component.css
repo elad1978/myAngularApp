@@ -1,6 +1,10 @@
 header {
-	position: fixed;
+  position: fixed;
   height: 50px;
   width: 100%;
   border: solid;
-  }
+}
+
+span {
+  font-size: 2.5rem;
+}
