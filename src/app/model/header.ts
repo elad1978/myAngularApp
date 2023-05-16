@@ -1,5 +1,5 @@
 export class Header {
-  name: String | undefined;
+  title: String | undefined;
   url: String | undefined;
   isShow: Boolean | undefined;
 }
