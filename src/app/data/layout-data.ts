@@ -10,6 +10,21 @@ export const pageHeader: Header = {
 };
 
 export const pageFooter: Footer = {
-  contactUs: '',
-  copyWrite: '',
+  contactUs: {
+    email: 'eladcohen1978.gmail.com',
+    whatsUp: {
+      href: 'https://www.flaticon.com/free-icons/whatsapp',
+      iconSrc: '../../../assets/images/whatsapp-logo.png',
+      title: 'whatsapp icons',
+      content: 'Whatsapp',
+    },
+    faceBook: {
+      href: 'https://www.flaticon.com/free-icons/whatsapp',
+      iconSrc: '../../../assets/images/facebook.png',
+      title: 'faceBook icons',
+      content: 'facebook',
+    },
+    phoneNum: '03-5490346',
+  },
+  copyWrite: 'CopyWrite to EC-webD ',
 };

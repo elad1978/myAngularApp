@@ -1,1 +1,19 @@
-<footer></footer>
+<footer>
+  <h3 class="text-center">Contact us</h3>
+  <div class="d-flex justify-content-between px-5">
+    <span>Email: {{ footerModel.contactUs.email }}</span>
+    <span class="pl-5">Our Phone: {{ footerModel.contactUs.phoneNum }}</span>
+    <div class="contactImages">
+      <a [href]="footerModel.contactUs.whatsUp.href">
+        <!-- {{ footerModel.contactUs.whatsUp.content }} -->
+        <img [src]="footerModel.contactUs.whatsUp.iconSrc" alt="whatsUp icon" />
+      </a>
+      <a [href]="footerModel.contactUs.faceBook.href">
+        <img
+          [src]="footerModel.contactUs.faceBook.iconSrc"
+          alt="faceBook icon"
+        />
+      </a>
+    </div>
+  </div>
+</footer>
