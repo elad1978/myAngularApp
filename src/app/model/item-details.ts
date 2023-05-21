@@ -1,5 +1,6 @@
+import { Item } from './item';
 export class ItemDetails {
-  type!: String;
-  url!: String;
-  description!: String;
+  item!: Item;
+  moreImages!: String[];
+  details!: String;
 }
