@@ -10,6 +10,7 @@ import { ContentComponent } from './layout/content/content.component';
 import { HomeComponent } from './screens/home/home.component';
 import { CatalogComponent } from './screens/catalog/catalog.component';
 import { ItemDetailsComponent } from './screens/item-details/item-details.component';
+import { ItemComponent } from './screens/item/item.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ItemDetailsComponent } from './screens/item-details/item-details.compon
     ContentComponent,
     HomeComponent,
     CatalogComponent,
-    ItemDetailsComponent
+    ItemDetailsComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
