@@ -1,1 +1,17 @@
-<p>catalog works!</p>
+<h2>Guitar catalog</h2>
+<div class="row">
+  <div class="col-sm" *ngFor="let item of catalogModel.items">
+    <div class="card mb-lg-4" style="width: 18rem">
+      <img class="card-img-top" [src]="item.image" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">{{ item.category }}</h5>
+        <h5 class="card-title">{{ item.company }}</h5>
+        <p class="card-text">
+          {{ item.model }}
+        </p>
+        <div class="price">price: {{ item.price }} nis</div>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>

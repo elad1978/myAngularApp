@@ -127,13 +127,5 @@ export const PageCatalog: Catalog = {
       model: 'Dave Mustaine Flying V EXP - Silver Metallic',
       price: 10250,
     },
-    {
-      //pattern
-      image: '',
-      category: '',
-      company: '',
-      model: '',
-      price: 0,
-    },
   ],
 };
