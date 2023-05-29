@@ -11,6 +11,7 @@ import { HomeComponent } from './screens/home/home.component';
 import { CatalogComponent } from './screens/catalog/catalog.component';
 import { ItemDetailsComponent } from './screens/item-details/item-details.component';
 import { ItemComponent } from './screens/item/item.component';
+import { CartComponent } from './screens/cart/cart.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ItemComponent } from './screens/item/item.component';
     HomeComponent,
     CatalogComponent,
     ItemDetailsComponent,
-    ItemComponent
+    ItemComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
