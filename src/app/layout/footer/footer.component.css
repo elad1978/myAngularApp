@@ -4,7 +4,9 @@ footer {
   width: 100%;
   min-height: 50px;
   height: 120px;
-  border: solid;
+  /* border: solid; */
+  background-color: rgb(45, 98, 244);
+  color: rgb(237, 237, 241);
 }
 
 img {

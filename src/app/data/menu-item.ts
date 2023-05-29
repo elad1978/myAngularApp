@@ -1,9 +1,9 @@
 import { Menultem } from '../model/menultem';
 
 export const items: Array<Menultem> = [
-  { name: '', url: '', isShow: true },
-  { name: '', url: '', isShow: true },
-  { name: '', url: '', isShow: true },
-  { name: '', url: '', isShow: true },
-  { name: '', url: '', isShow: true },
+  { name: 'Catalog', url: 'catalog', isShow: true },
+  { name: 'Home', url: 'home', isShow: true },
+  // { name: '', url: '', isShow: true },
+  // { name: '', url: '', isShow: true },
+  // { name: '', url: '', isShow: true },
 ];
