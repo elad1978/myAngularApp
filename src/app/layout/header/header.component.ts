@@ -9,5 +9,5 @@ import { Header } from 'src/app/model/header';
 })
 export class HeaderComponent {
   // headerModel: Header = pageHeader; //the data comes directly
-  @Input() headerModel: Header = pageHeader; //the data comes from the parent element
+  @Input() headerModel!: Header; //the data comes from the parent element
 }

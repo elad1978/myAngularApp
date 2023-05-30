@@ -13,8 +13,11 @@
         <p class="card-text">
           {{ item.model }}
         </p>
-        <div class="price">price: {{ item.price }} nis</div>
-        <a href="#" class="btn btn-primary">Add to cart</a>
+        <div class="price">price: {{ item.price }} ₪</div>
+        <button type="button" class="btn btn-primary" (click)="addItem(item)">
+          Add to cart
+        </button>
+        <!-- <a href="#" class="btn btn-primary">Add to cart</a> -->
       </div>
     </div>
   </div>

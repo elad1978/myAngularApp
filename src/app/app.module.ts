@@ -12,7 +12,8 @@ import { CatalogComponent } from './screens/catalog/catalog.component';
 import { ItemDetailsComponent } from './screens/item-details/item-details.component';
 import { ItemComponent } from './screens/item/item.component';
 import { CartComponent } from './screens/cart/cart.component';
-
+import { DreamListComponent } from './screens/dream-list/dream-list.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,13 +26,11 @@ import { CartComponent } from './screens/cart/cart.component';
     CatalogComponent,
     ItemDetailsComponent,
     ItemComponent,
-    CartComponent
+    CartComponent,
+    DreamListComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

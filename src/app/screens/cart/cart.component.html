@@ -1,1 +1,17 @@
-<p>cart works!</p>
+<div class="cart-item" *ngFor="let item of items">
+  <span>{{ item.category }} </span>
+  <span>{{ item.company }} </span>
+  <span>{{ item.model }} </span>
+  <span>{{ item.price }} ₪ </span>
+  <button type="button" class="btn btn-primary" (click)="removeItem(item)">
+    Remove item
+  </button>
+</div>
+<button
+  type="button"
+  class="btn btn-primary m-2"
+  (click)="emptyCart()"
+  *ngIf="items.length != 0"
+>
+  Empty cart
+</button>

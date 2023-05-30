@@ -17,8 +17,8 @@ export class CatalogComponent {
     private ItemService: ItemServiceService
   ) {}
 
-  addToCart(item: Item) {
-    this.ItemService.addToCart(item);
+  addItem(item: Item) {
+    this.ItemService.addItem(item);
     window.alert('Your product has been added to the cart!');
   }
 }
