@@ -1,0 +1,16 @@
+<div class="container m-3">
+  <h2>To Do List</h2>
+  <div *ngFor="let item of todos" class="item-details row pt-2 pe-2 mx-1">
+    <span class="col">{{ item.id }} </span>
+    <span class="col">{{ item.title }} </span>
+    <!-- <span class="col">{{ item.model }} </span>
+      <span class="col">{{ item.price }} ₪ </span>
+      <button
+        class="btn btn-primary mb-2 col"
+        type="button"
+        (click)="removeDreamItem(item)"
+      >
+        Delete item
+      </button> -->
+  </div>
+</div>

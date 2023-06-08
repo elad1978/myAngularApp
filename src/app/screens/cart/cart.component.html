@@ -1,9 +1,10 @@
-<div class="cart-item" *ngFor="let item of items">
-  <span>{{ item.category }} </span>
-  <span>{{ item.company }} </span>
-  <span>{{ item.model }} </span>
-  <span>{{ item.price }} ₪ </span>
-  <button type="button" class="btn btn-primary" (click)="removeItem(item)">
+<h2>My Cart</h2>
+<div class="cart-item row mb-2 me-4" *ngFor="let item of items">
+  <span class="col">{{ item.category }} </span>
+  <span class="col">{{ item.company }} </span>
+  <span class="col">{{ item.model }} </span>
+  <span class="col">{{ item.price }} ₪ </span>
+  <button type="button" class="btn btn-primary col" (click)="removeItem(item)">
     Remove item
   </button>
 </div>

@@ -1,0 +1,8 @@
+.item-details {
+  border-bottom: 2px solid rgba(28, 110, 164, 0.12);
+}
+
+.detailsCol {
+  border-right: 2px solid rgba(28, 110, 164, 0.12);
+  border-left: 2px solid rgba(28, 110, 164, 0.12);
+}

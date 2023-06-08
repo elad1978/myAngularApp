@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Item } from '../model/item';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root',
@@ -10,7 +11,7 @@ export class ItemServiceService {
     // { category: 'sss', company: 'ffff', model: 'sss', price: 333 },
   ];
 
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   //Cart items
 

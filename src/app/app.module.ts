@@ -14,6 +14,9 @@ import { ItemComponent } from './screens/item/item.component';
 import { CartComponent } from './screens/cart/cart.component';
 import { DreamListComponent } from './screens/dream-list/dream-list.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { TodosComponent } from './screens/todos/todos.component';
+import { UsersComponent } from './screens/users/users.component';
 
 @NgModule({
   declarations: [
@@ -28,8 +31,10 @@ import { FormsModule } from '@angular/forms';
     ItemComponent,
     CartComponent,
     DreamListComponent,
+    TodosComponent,
+    UsersComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

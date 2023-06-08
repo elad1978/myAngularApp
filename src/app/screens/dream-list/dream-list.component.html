@@ -1,6 +1,6 @@
 <h2>My Guitar Dream-List</h2>
-<div class="row">
-  <div class="col">
+<div class="row pb-1">
+  <div class="detailsCol col-8">
     <button class="btn btn-primary m-2" type="button" (click)="getDreamItems()">
       Get dream guitars
     </button>
@@ -9,15 +9,15 @@
       type="button"
       (click)="emptyDreamItems()"
     >
-      Empty dream items
+      Empty dream guitars
     </button>
-    <div *ngFor="let item of dreamList">
-      <span>{{ item.category }} </span>
-      <span>{{ item.company }} </span>
-      <span>{{ item.model }} </span>
-      <span>{{ item.price }} ₪ </span>
+    <div *ngFor="let item of dreamList" class="item-details row pt-2 pe-2 mx-1">
+      <span class="col">{{ item.category }} </span>
+      <span class="col">{{ item.company }} </span>
+      <span class="col">{{ item.model }} </span>
+      <span class="col">{{ item.price }} ₪ </span>
       <button
-        class="btn btn-primary mb-2"
+        class="btn btn-primary mb-2 col"
         type="button"
         (click)="removeDreamItem(item)"
       >
@@ -25,7 +25,8 @@
       </button>
     </div>
   </div>
-  <form class="col">
+  <form class="col-4">
+    <h3>Add a guitar:</h3>
     <div class="mb-3">
       <label for="category" class="form-label">Category</label>
       <input
@@ -62,7 +63,7 @@
         [ngModelOptions]="{ standalone: true }"
       />
     </div>
-    <button class="btn btn-primary mb-3" type="button" (click)="addDreamItem()">
+    <button class="btn btn-primary mb-4" type="button" (click)="addDreamItem()">
       Add dream guitar
     </button>
   </form>

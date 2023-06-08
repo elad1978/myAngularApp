@@ -1,0 +1,93 @@
+<div class="container m-3 row">
+  <h2>Users List</h2>
+  <div class="col-8">
+    <div
+      *ngFor="let user of users"
+      class="item-details row pt-2 pe-2 mx-1"
+      (click)="getUserData(user)"
+    >
+      <span class="col">{{ user.id }} </span>
+      <span class="col">{{ user.firstName }} </span>
+      <span class="col">{{ user.city }} </span>
+      <!-- <img [src]="user.avatar" alt="avatar" /> -->
+      <button
+        class="btn btn-primary mb-2 col"
+        type="button"
+        (click)="deleteUser(user.id)"
+      >
+        Delete item
+      </button>
+    </div>
+  </div>
+  <!--add form -->
+  <div class="col-4">
+    <form>
+      <h3>Add a User:</h3>
+      <!-- <div class="mb-3">
+      <label for="id" class="form-label">id</label>
+      <input
+        type="number"
+        class="form-control"
+        [(ngModel)]="newUser.id"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </div> -->
+      <div class="mb-3">
+        <label for="firstName" class="form-label">First name</label>
+        <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="newUser.firstName"
+          [ngModelOptions]="{ standalone: true }"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="city" class="form-label">City</label>
+        <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="newUser.city"
+          [ngModelOptions]="{ standalone: true }"
+        />
+      </div>
+
+      <button class="btn btn-primary mb-4" type="button" (click)="addUser()">
+        Add user
+      </button>
+    </form>
+    <!-- update form -->
+    <form>
+      <h3>update User:</h3>
+      <p>
+        Click on the user you want to update it. the details will appear in this
+        form.
+      </p>
+      <div class="mb-3">
+        <label for="firstName" class="form-label">First name</label>
+        <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="updateUser.firstName"
+          [ngModelOptions]="{ standalone: true }"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="city" class="form-label">City</label>
+        <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="updateUser.city"
+          [ngModelOptions]="{ standalone: true }"
+        />
+      </div>
+      <button
+        *ngIf="updateUser"
+        class="btn btn-primary mb-4"
+        type="button"
+        (click)="updateUserFunc()"
+      >
+        Update user
+      </button>
+    </form>
+  </div>
+</div>
