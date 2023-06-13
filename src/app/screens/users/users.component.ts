@@ -30,17 +30,7 @@ export class UsersComponent implements OnInit {
       city: user.city,
       id: user.id,
     };
-    console.log(this.updateUser);
-  }
-
-  async getOneUser(userId?: number) {
-    try {
-      this.user = await this.usersService.getOneUser(userId);
-      // console.log(this.users);
-      alert(this.user);
-    } catch (err) {
-      console.log(err);
-    }
+    //console.log(this.updateUser);
   }
 
   async addUser() {
@@ -71,8 +61,18 @@ export class UsersComponent implements OnInit {
   async deleteUser(userId?: number) {
     try {
       await this.usersService.deleteUser(userId);
-      // console.log(this.users);
       this.users = await this.usersService.getAllUsers();
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+  async getUser(userId?: number) {
+    try {
+      this.user = await this.usersService.getOneUser(userId);
+      alert(this.user.firstName + '  lives at ' + this.user.city);
+      this.user = {};
+      // this.users = await this.usersService.getAllUsers();
     } catch (err) {
       console.log(err);
     }

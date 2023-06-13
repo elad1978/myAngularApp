@@ -1,21 +1,26 @@
 <div class="container m-3 row">
   <h2>Users List</h2>
   <div class="col-8">
-    <div
-      *ngFor="let user of users"
-      class="item-details row pt-2 pe-2 mx-1"
-      (click)="getUserData(user)"
-    >
-      <span class="col">{{ user.id }} </span>
-      <span class="col">{{ user.firstName }} </span>
-      <span class="col">{{ user.city }} </span>
-      <!-- <img [src]="user.avatar" alt="avatar" /> -->
+    <div *ngFor="let user of users" class="item-details row pt-2 pe-2 mx-1">
+      <div (click)="getUserData(user)" class="col-8 row">
+        <span class="col">{{ user.id }} </span>
+        <span class="col">{{ user.firstName }} </span>
+        <span class="col">{{ user.city }} </span>
+        <!-- <img [src]="user.avatar" alt="avatar" /> -->
+      </div>
       <button
         class="btn btn-primary mb-2 col"
         type="button"
         (click)="deleteUser(user.id)"
       >
         Delete item
+      </button>
+      <button
+        class="btn btn-primary mb-2 ms-1 col"
+        type="button"
+        (click)="getUser(user.id)"
+      >
+        Get user
       </button>
     </div>
   </div>
@@ -59,8 +64,9 @@
     <form>
       <h3>update User:</h3>
       <p>
-        Click on the user you want to update it. the details will appear in this
-        form.
+        Click on the user you want to update. the details will appear in this
+        form. <br />
+        Now you can change them from here.
       </p>
       <div class="mb-3">
         <label for="firstName" class="form-label">First name</label>
