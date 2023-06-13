@@ -3,7 +3,7 @@
   <div class="col-8">
     <div *ngFor="let user of users" class="item-details row pt-2 pe-2 mx-1">
       <div (click)="getUserData(user)" class="col-8 row">
-        <span class="col">{{ user.id }} </span>
+        <span class="col-2">{{ user.id }} </span>
         <span class="col">{{ user.firstName }} </span>
         <span class="col">{{ user.city }} </span>
         <!-- <img [src]="user.avatar" alt="avatar" /> -->
